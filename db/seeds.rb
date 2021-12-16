@@ -25,12 +25,6 @@ albums = Album.create([
         album_cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Van_Halen_-_Diver_Down.svg/1200px-Van_Halen_-_Diver_Down.svg.png"
     },
     {
-        title: "Diver Down",
-        artist: "Van Halen",
-        year: 1982,
-        album_cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Van_Halen_-_Diver_Down.svg/1200px-Van_Halen_-_Diver_Down.svg.png"
-    },
-    {
         title: "The Cars",
         artist: "The Cars",
         year: 1978,
