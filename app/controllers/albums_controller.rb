@@ -2,7 +2,7 @@ class AlbumsController < ApplicationController
     def index
         @albums = Album.all
 
-        # render json: @albums
+        render json: @albums
     end 
 
     def show
@@ -27,6 +27,6 @@ class AlbumsController < ApplicationController
     private
 
     def album_params
-        params.require(:album).permit(:title, :artist, :year, :album_cover)
+        params.require(:album).permit(:title, :year, :album_cover, :artist_id)
     end
 end

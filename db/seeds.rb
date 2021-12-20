@@ -8,27 +8,27 @@
 albums = Album.create([
     {
         title: "Van Halen",
-        artist: "Van Halen",
         year: 1978,
-        album_cover: "https://www.themightyvanhalen.net/wp-content/uploads/cover-1978.jpg"
+        album_cover: "https://www.themightyvanhalen.net/wp-content/uploads/cover-1978.jpg",
+        artist_id: 1
     }, 
     {
         title: "Women and Children First",
-        artist: "Van Halen",
         year: 1980,
-        album_cover: "https://m.media-amazon.com/images/I/71jQAwJXzXL._SL1079_.jpg"
+        album_cover: "https://m.media-amazon.com/images/I/71jQAwJXzXL._SL1079_.jpg",
+        artist_id: 1
     },
     {
         title: "Diver Down",
-        artist: "Van Halen",
         year: 1982,
-        album_cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Van_Halen_-_Diver_Down.svg/1200px-Van_Halen_-_Diver_Down.svg.png"
+        album_cover: "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d4/Van_Halen_-_Diver_Down.svg/1200px-Van_Halen_-_Diver_Down.svg.png",
+        artist_id: 1
     },
     {
         title: "The Cars",
-        artist: "The Cars",
         year: 1978,
-        album_cover: "https://m.media-amazon.com/images/I/814-6zPFsLL._SL1425_.jpg"
+        album_cover: "https://m.media-amazon.com/images/I/814-6zPFsLL._SL1425_.jpg",
+        artist_id: 2
     }
 ])
 
