@@ -2,7 +2,9 @@ class ArtistsController < ApplicationController
     def index
         @artists = Artist.all
 
-        render json: @artists
+        # to serialize this in the future
+        render json: @artists, except: [:created_at, :updated_at], 
+        include: {:albums => { :except => [:created_at, :updated_at] }}
     end
 
     def show
