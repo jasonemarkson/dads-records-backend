@@ -1,10 +1,13 @@
 class AlbumsController < ApplicationController
+    skip_before_action :verify_authenticity_token
+    # add error page to redirect user
+
     def index
         @albums = Album.all
 
         # to serialize this in the future
         render json: @albums, except: [:created_at, :updated_at],
-        :include => {:artist => {:only => :name}}
+        :include => {:artist => {:only => [:id, :name]}}
     end 
 
     def show
@@ -18,7 +21,7 @@ class AlbumsController < ApplicationController
     end
 
     def destroy
-        @albums = Albums.all
+        @albums = Album.all
         @album = Album.all.find(params[:id])
         @album.destroy
 
